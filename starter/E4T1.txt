@@ -1,5 +1,9 @@
 
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+1) Don't use ssh password auth (use ssh private key)
+2) Restrict inbound traffic to port 22 from untrusted networks (using Security groups)
+3) Don't provide public IP for the instance (use NAT gateways instead)
 
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+We can use AWS Federated access and provide our users temporary credentials which allow them to assume the role which has access to the bucket. Or if it is not possible we can use S3 client side encryption. This approach would probably involve symmetric keys stored in AWS KMS.

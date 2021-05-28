@@ -1,3 +1,6 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+Vulnerabilities with open and listening ports, firewall settings, allowed inbound/outbound traffic, ssh password auth,
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+- Turn off ssh password auth
+- Set up Security Groups based on Least Access Privileges

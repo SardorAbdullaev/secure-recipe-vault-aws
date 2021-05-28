@@ -11,6 +11,7 @@ For terraform:
 - Terrascan
 
 ### Example vulnerability
+Certain IAM role has too many privileges
 
 ##Scan AMI’s or containers for OS vulnerabilities
 As listed in the course:
@@ -23,6 +24,7 @@ As listed in the course:
 
 
 ### Example vulnerability
+For example vulnerability to CSRF attack in let say old version of Tomcat server
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
 Besides AWS Config and Security Hub as listed in the course:
@@ -36,3 +38,4 @@ Besides AWS Config and Security Hub as listed in the course:
 - CheckPoint CloudGuard Dome9
 
 ### Example vulnerability
+Unintentional open port which could be exploited by hackers
