@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+NACLs are not applied for the Trusted networks. Setting the firewall is essential for the security, we want to limit access to our resources in the network to the required minimum.
+
+# Poor practice 2
+Web Server instance doesn't need access to the internet and S3 bucket shouldn't be public. Web server instance can read the s3 bucket within the VPC if we turn on VPC endpoint for the bucket. Doing so, we are providing Least Access Privilege and reducing the attack surface. On the other hand, restricting the outbound traffic isn't the best practice, so we can employ NAT gateways preventing intrusions from untrusted networks or internet.
