@@ -1,8 +1,14 @@
 
 # What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+- use immutable instances for web server
+- use image hardening (latest OS, fully patched, etc)
+- use cloudformation templates inspection tools like CFRipper
 
 # Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+As I've mentioned in "E1T5.txt", yes, that would further increase the security of the bucket making it inaccessible from the internet
 
 # Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+Apparently, no, when I applied the encryption I was informed that only new files would inherit the encryption settings
 
 # What would happen if the original cloud formation templates are applied to this environment.
+I tried it and got "An error occurred (ValidationError) when calling the UpdateStack operation: No updates are to be performed". So apparently, it does nothing, however we may fall into the failed state if we make too many modifications.

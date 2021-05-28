@@ -1,13 +1,38 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
+As listed in the course:
+- Cfripper
+- Cloudsploit
+- cfn-lint
+For terraform:
+- Chef inspec
+- Open policy agent / Regula
+- Terrascan
 
 ### Example vulnerability
 
 ##Scan AMI’s or containers for OS vulnerabilities
+As listed in the course:
+- Clair
+- Anchore
+- Trivy
+- aquasec,
+- sysdig
+- twistlock
+
 
 ### Example vulnerability
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+Besides AWS Config and Security Hub as listed in the course:
+- Prowler
+- Scout2
+- Cloudsploit
+- CloudCustodian
+- Fugue
+- Palo Alto Prisma Cloud
+- CloudConformity
+- CheckPoint CloudGuard Dome9
 
 ### Example vulnerability
