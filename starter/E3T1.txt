@@ -2,4 +2,4 @@
 As GuardDuty found out: "Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password". Which means that due to the breach in our firewall (in this case Security Group), specifically on port 22 from unknown IP, intruders tried to access our instance.
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
-As per the documentation: "GuardDuty analyzes tens of billions of events across multiple AWS data sources, such as AWS CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs". So apparently, it analyses DNS, CloudTrail, and VPC Flow logs to detect suspicious patterns.
+As per the documentation: "GuardDuty analyzes tens of billions of events across multiple AWS data sources, such as AWS CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs" (source)[https://aws.amazon.com/guardduty/]. So apparently, it analyses DNS, CloudTrail, and VPC Flow logs to detect suspicious patterns.
